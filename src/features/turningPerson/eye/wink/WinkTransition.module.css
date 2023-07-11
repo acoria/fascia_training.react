@@ -1,0 +1,13 @@
+.wink {
+    transform: rotateX(90deg);
+    transition: transform ease-in 0.3s;
+}
+
+.unwink {
+    transform: rotateX(0);
+    transition: transform ease-in 0.3s;
+}
+
+.invisible {
+    opacity: 0;
+}

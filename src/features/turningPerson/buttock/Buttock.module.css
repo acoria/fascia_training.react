@@ -1,0 +1,19 @@
+.buttock {
+  position: absolute;
+  bottom: 37%;
+  left: 46%;
+  width: 0.5rem;
+  height: 1.5rem;
+  border-left: 3px solid white;
+  border-radius: 100%;
+  transform: rotateZ(180deg);
+  opacity: 0;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}

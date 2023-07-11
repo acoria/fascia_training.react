@@ -1,0 +1,43 @@
+.home {
+  display: grid;
+  grid-template-columns: 30% auto;
+  height: 100%;
+}
+
+.selectedPartTitle {
+  display: flex;
+  justify-content: center;
+  height: 15vh;
+  margin: 0;
+  padding-left: 2.8rem;
+  align-items: center;
+  font-size: medium;
+  font-variant: small-caps;
+  background-color: var(--primaryColor);
+  color: white;
+}
+
+.trainingList {
+  margin-top: 1rem;
+}
+
+.videoSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid var(--primaryColor);
+}
+
+.videoSection span {
+  font-size: 10rem;
+  padding: 5rem 8rem;
+  border: 1px solid black;
+}
+
+.turningPerson {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 100;
+  padding-top: 0.3rem;
+}

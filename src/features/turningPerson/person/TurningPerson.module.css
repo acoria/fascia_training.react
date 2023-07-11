@@ -1,0 +1,41 @@
+.turningPerson {
+  position: relative;
+  display: inline-block;
+  background-color: white;
+}
+
+.personShrink {
+  transform: scale(0.15);
+  transform-origin: 0% 0%;
+  transition: transform 0.5s ease-in;
+}
+.personShrunk {
+  transform: scale(0.15);
+  transform-origin: 0% 0%;
+}
+
+.personGrow {
+  transform: scale(1);
+  transform-origin: 0% 0%;
+  transition: transform 0.5s ease-out;
+}
+
+.turnButton {
+  position: absolute;
+  right: 10%;
+  top: 45%;
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+.image {
+  height: 100vh;
+  transform: rotateY(0deg);
+  transition: transform 1s ease-in;
+  cursor: pointer;
+}
+
+.flipSideways {
+  transform: rotateY(180deg);
+  transition: transform 1s ease-in;
+}
