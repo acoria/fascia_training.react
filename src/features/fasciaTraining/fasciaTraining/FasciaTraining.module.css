@@ -1,5 +1,5 @@
 .fasciaTraining {
-  background-color: var(--primaryColor);
+  background-color: var(--secondaryColor);
   color: white;
   padding: 0.5rem 1rem;
   margin: 0.5rem 1rem;
@@ -8,5 +8,5 @@
 }
 
 .selected {
-  background-color: var(--secondaryColor);
+  background-color: var(--accentColor);
 }

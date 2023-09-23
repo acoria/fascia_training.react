@@ -1,3 +1,4 @@
 export interface ITurningPersonProps {
-    className?: string
+  className?: string;
+  personColor?: string;
 }

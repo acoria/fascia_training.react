@@ -13,7 +13,7 @@
   align-items: center;
   font-size: medium;
   font-variant: small-caps;
-  background-color: var(--primaryColor);
+  background-color: var(--secondaryColor);
   color: white;
 }
 
@@ -25,7 +25,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-left: 1px solid var(--primaryColor);
+  border-left: 1px solid var(--secondaryColor);
 }
 
 .videoSection span {
