@@ -1,7 +1,9 @@
+import { CSSProperties } from "react";
 import { MaterialIcons } from "./MaterialIcons";
 
 export interface IIconProps {
-    icon: MaterialIcons,
-    className?: string,
-    onClick?: () => void
+  icon: MaterialIcons;
+  className?: string;
+  style?: CSSProperties;
+  onClick?: () => void;
 }

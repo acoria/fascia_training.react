@@ -24,25 +24,30 @@ export const TurningPerson: React.FC<ITurningPersonProps> = (props) => {
       }}
     >
       <div className={`${styles.turningPerson} ${props.className}`}>
-        <div>
-          <PersonImage
-            style={{ color: props.personColor ?? "black" }}
-            className={`${styles.image} ${
-              showFront ? "" : styles.flipSideways
-            }`}
-            onClick={() => setShowFullSize((previous) => !previous)}
-          />
+        <div className={styles.personAndArrow}>
+          <div>
+            <PersonImage
+              style={{ color: props.personColor ?? "black" }}
+              className={`${styles.image} ${
+                showFront ? "" : styles.flipSideways
+              }`}
+              onClick={() => setShowFullSize((previous) => !previous)}
+            />
+            <Buttock show={!showFront} />
+            <WinkingEye show={showFront} positionInPercentFromLeft={50} />
+            <WinkingEye show={showFront} positionInPercentFromLeft={60} />
+          </div>
+          {showFullSize && (
+            <Icon
+              icon={MaterialIcons.refresh}
+              style={{ color: props.personColor ?? "black" }}
+              className={`${styles.turnButton} ${
+                !showFront && styles.turnButtonTurned
+              }`}
+              onClick={() => setShowFront((previous) => !previous)}
+            />
+          )}
         </div>
-        <Buttock show={!showFront} />
-        <WinkingEye show={showFront} positionInPercentFromLeft={50} />
-        <WinkingEye show={showFront} positionInPercentFromLeft={60} />
-        {showFullSize && (
-          <Icon
-            icon={MaterialIcons.refresh}
-            className={styles.turnButton}
-            onClick={() => setShowFront((previous) => !previous)}
-          />
-        )}
       </div>
     </CSSTransition>
   );
